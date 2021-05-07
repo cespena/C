@@ -3,7 +3,7 @@ CC=gcc
 all: link
 
 link: main.o LinkedList.o
-	$(CC) main.o LinkedList.o  -o program
+	$(CC) main.o LinkedList.o
 
 main.o: main.c 
 	$(CC) -c main.c 
@@ -12,7 +12,7 @@ LinkedList.o: LinkedList.c
 	$(CC) -c LinkedList.c
 
 run:
-	./program
+	./a.out
 
 clean:
-	rm program *.o
+	rm a.out *.o
