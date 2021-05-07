@@ -1,0 +1,3 @@
+ls -l /
+echo this is a test
+pwd

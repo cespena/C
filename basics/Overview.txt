@@ -1,0 +1,17 @@
+C Basics
+- Source File
+- Main Function
+- Compilation
+- libraries/simple preprocessor directives
+- Variables
+- Assignment Operator
+- I/O Functions
+- Arithmetic Operators
+- Bitwise Operators
+- Extra Assignment Operators
+- Conditions
+- If Statements
+- While Loops
+- For Loops
+- Do...While Loops
+- Functions
