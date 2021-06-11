@@ -12,7 +12,6 @@ Node* new_node(int value, Node* next)
 //Deallocate Linked List and Queue
 void free_queue(Queue* queue)
 {
-	queue->rear = NULL;
 	Node* prev = queue->front;
 	Node* curr = queue->front;
 	while(curr)

@@ -22,7 +22,20 @@ void insert_node(Node** head, int value)
 	Node* new = new_node();
 	set_value(&new, value);
 	set_next(new, *head);
-	*head = new;
+
+	if ((*head) == NULL || (*head)->value >= value)
+	{
+		new->next = (*head);
+		(*head) = new;
+		return;
+	}
+
+	Node *temp = (*head);
+	while (temp->next && temp->next->value < value)
+		temp = temp->next;
+
+	new->next = temp->next;
+	temp->next = new;
 }
 
 int remove_node(Node** head, int value)
